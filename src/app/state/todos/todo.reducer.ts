@@ -1,4 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
+import { Todo } from 'src/app/components/todo/todo.model';
 import {
   addTodo,
   removeTodo,
@@ -6,11 +7,10 @@ import {
   loadTodosSuccess,
   loadTodosFailure,
 } from './todo.actions';
-import { Todo } from '../../todo/todo.model';
 
 export interface TodoState {
   todos: Todo[];
-  error: string;
+  error: string | null;
   status: 'pending' | 'loading' | 'error' | 'success';
 }
 
