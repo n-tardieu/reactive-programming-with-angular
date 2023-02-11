@@ -7,12 +7,12 @@ import {
   loadTodosSuccess,
   loadTodosFailure,
 } from './todo.actions';
-import { TodoService } from '../../todo/todo.service';
 import { of, from } from 'rxjs';
 import { switchMap, map, catchError, withLatestFrom } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
-import { selectAllTodos } from './todo.selectors';
 import { AppState } from '../app.state';
+import { TodoService } from '../../components/todo/todo.service';
+import { selectAllTodos } from './todo.selector';
 
 @Injectable()
 export class TodoEffects {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { addTodo, loadTodos, removeTodo } from 'src/app/state/todos/todo.actions';
-import { selectAllTodos } from 'src/app/state/todos/todo.selector';
+import { addTodo, loadTodos, removeTodo } from '../../state/todos/todo.actions';
+import { selectAllTodos } from '../../state/todos/todo.selector';
 import { Todo } from './todo.model';
 
 @Component({
