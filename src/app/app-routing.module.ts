@@ -1,21 +1,15 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'todo',
-    loadChildren: () =>
-      import('./components/todo/todo.module').then((m) => m.TodoModule),
-  },
-  {
     path: '',
-    redirectTo: 'todo',
-    pathMatch: 'full',
+    loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule)
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
