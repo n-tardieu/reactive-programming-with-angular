@@ -8,6 +8,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { MoviesSearchComponent } from './movies/features/movies-search/movies-search.component';
 
 @NgModule({
   declarations: [
