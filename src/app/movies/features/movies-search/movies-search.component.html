@@ -1,1 +1,18 @@
-<p>movies-search works!</p>
+<h1>Movies search</h1>
+
+<span class="p-input-icon-left searchInput">
+    <i class="pi pi-search"></i>
+    <input type="text" pInputText placeholder="Search" [formControl]="searchControl" />
+</span>
+
+<div class="articles-container" *ngIf="searchResults$ | async as results">
+    <ng-container *ngIf="results.length; else loading">
+        <p-card *ngFor="let result of results; let i=index" [header]="result">
+            Description : {{ result }}
+        </p-card>
+    </ng-container>
+</div>
+
+<ng-template #loading>
+    <p-skeleton height="150px"></p-skeleton>
+</ng-template>
