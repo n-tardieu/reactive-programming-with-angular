@@ -5,14 +5,21 @@
     <input type="text" pInputText placeholder="Search" [formControl]="searchControl" />
 </span>
 
-<div class="articles-container" *ngIf="searchResults$ | async as results">
-    <ng-container *ngIf="results.length; else loading">
-        <p-card *ngFor="let result of results; let i=index" [header]="result">
+<div class="movies-container" *ngIf="searchResults$ | async as results; else loading">
+    <ng-container *ngIf="results.length; else moviesNotFound">
+        <p-card *ngFor="let result of results; let i=index; trackBy: trackByMovie" [header]="result">
             Description : {{ result }}
         </p-card>
     </ng-container>
 </div>
 
+
 <ng-template #loading>
     <p-skeleton height="150px"></p-skeleton>
+    <p-skeleton height="150px"></p-skeleton>
+    <p-skeleton height="150px"></p-skeleton>
+</ng-template>
+
+<ng-template #moviesNotFound>
+    <h2>movies not found.. </h2>
 </ng-template>
