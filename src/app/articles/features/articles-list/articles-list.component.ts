@@ -26,7 +26,7 @@ export class ArticlesListComponent implements OnInit {
   }
 
   public trackByArticle(i: number, _item: Article): number {
-    return i;
+    return _item.id;
   }
 
   public onDelete(id: number): void {
