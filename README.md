@@ -8,19 +8,19 @@ This repot is an illustration of the principles of reactive programming on Angul
 Thank you [estellepicq](https://github.com/estellepicq) for your advice !
 
 ----
-## Potential plan
+## Plan
 
-1. What is rxjs ? 
+1. What is rxjs ? (todo)
 
      Imperative = How we want to do something
 
      Declarative = What we want, what something is 
 
-2. What does it look like in Angular ? [watch](https://www.youtube.com/watch?v=skOTEbGwncE)
+2. What does it look like in Angular ? [watch](https://www.youtube.com/watch?v=skOTEbGwncE) (todo)
 
 3. Should we absolutely avoid manually subscribing to Angular ? [watch](https://www.youtube.com/watch?v=WvMxnGfqEis)
 
-4. rxjs (search, routing, formControle ...) 
+4. rxjs (search, routing, formControle ...) (todo)
 
 5. Signals
 
