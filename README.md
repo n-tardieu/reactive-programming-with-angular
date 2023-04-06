@@ -2,10 +2,11 @@
 
 ## About this repository
 
-This repot is an illustration of the principles of reactive programming on Angular for a technical presentation. The meeting is hosted by Estelle Picq and myself.
+This repot is an illustration of the principles of reactive programming on Angular for a technical presentation. The meeting is hosted by Estelle Picq and myself. find more information in [reactive-programming](https://github.com/n-tardieu/reactive-programming-with-angular/blob/main/reactive-programming.md)
 
 
 Thank you [estellepicq](https://github.com/estellepicq) for your advice !
+
 
 ----
 
