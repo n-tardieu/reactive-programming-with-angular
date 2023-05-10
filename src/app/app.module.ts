@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from '@ngrx/store';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConcatMapComponent } from './concat-map/concat-map/concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map/switch-map.component';
 import { SharedModule } from './shared/shared.module';
-import { MoviesSearchComponent } from './movies/features/movies-search/movies-search.component';
+import { ImperativeCodeComponent } from './imperative-code/features/imperative-code/imperative-code.component';
+import { DeclarativeCodeComponent } from './declarative-code/features/declarative-code/declarative-code.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SwitchMapComponent,
+    ConcatMapComponent,
+    ImperativeCodeComponent,
+    DeclarativeCodeComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
     SharedModule,
-    StoreModule.forRoot(),
-    EffectsModule.forRoot([]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

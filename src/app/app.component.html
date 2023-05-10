@@ -1,6 +1,5 @@
-<div class="navbar">
-    <button pButton routerLink="/" class="p-button-link">Rxjs</button>
-    <button pButton routerLink="/">ngrx</button>
-    <button pButton routerLink="/movies">switchMap</button>
-</div>
-<router-outlet></router-outlet>
+<p-menubar [model]="menu"></p-menubar>
+
+<p-card class="main-content">
+  <router-outlet></router-outlet>
+</p-card>

@@ -5,7 +5,7 @@ import { MOVIES } from './movies.mock';
 @Injectable({
   providedIn: 'root'
 })
-export class MoviesService {
+export class SwitchMapService {
 
   constructor() { }
 
